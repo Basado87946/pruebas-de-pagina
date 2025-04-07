@@ -1,0 +1,146 @@
+/* Estilos responsivos para diferentes dispositivos */
+
+/* Tablets (768px - 1023px) */
+@media screen and (max-width: 1023px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    
+    .left-section, .center-section, .right-section {
+        width: 100%;
+        margin: 5px 0;
+        text-align: center;
+    }
+    
+    .content {
+        padding: 10px;
+    }
+    
+    .title-box {
+        width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+    
+    .title-box h1 {
+        font-size: 24px;
+    }
+    
+    .title-box h2 {
+        font-size: 18px;
+    }
+    
+    .title-box h3 {
+        font-size: 16px;
+    }
+    
+    /* Ajustar posiciones de los cuadros */
+    .problem-box, .box-2, .box-3, .box-4, .box-5, .box-6 {
+        position: static;
+        width: 90%;
+        max-width: none;
+        margin: 20px auto;
+        float: none;
+        clear: both;
+    }
+    
+    .box-2 {
+        top: auto;
+        margin-left: auto;
+    }
+    
+    /* Asegurar que los cuadros sean visibles */
+    .box-5, .box-6 {
+        display: block !important;
+    }
+}
+
+/* Móviles (hasta 767px) */
+@media screen and (max-width: 767px) {
+    .navbar {
+        padding: 5px 0;
+    }
+    
+    .logo-image {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .title-box {
+        padding: 10px;
+    }
+    
+    .title-box h1 {
+        font-size: 20px;
+    }
+    
+    .title-box h2 {
+        font-size: 16px;
+    }
+    
+    .title-box h3, .project-info {
+        font-size: 14px;
+    }
+    
+    /* Ajustar tamaño de los cuadros */
+    .problem-box, .box-2, .box-3, .box-4, .box-5, .box-6 {
+        padding: 10px;
+        margin: 15px auto;
+    }
+    
+    /* Ajustar tamaño de texto */
+    .problem-title, .box-2-title, .box-3-title, .box-4-title, .box-5-title, .box-6-title {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    
+    .toggle-btn, .toggle-btn-2, .toggle-btn-3, .toggle-btn-4, .toggle-btn-5 {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    
+    /* Ajustar modal para imágenes */
+    .modal-content {
+        margin: 10% auto;
+        max-width: 95%;
+    }
+    
+    .close-modal {
+        top: 10px;
+        right: 20px;
+        font-size: 30px;
+    }
+    
+    /* Ocultar algunos elementos en móviles */
+    .right-section a:not(:first-child) {
+        display: none;
+    }
+}
+
+/* Ajustes para pantallas muy pequeñas */
+@media screen and (max-width: 480px) {
+    .title-box h1 {
+        font-size: 18px;
+    }
+    
+    .title-box h2 {
+        font-size: 14px;
+    }
+    
+    .title-box h3, .project-info {
+        font-size: 12px;
+    }
+    
+    .problem-content p, .box-2-content p, .box-3-content p, .box-4-content p, .box-5-content p {
+        font-size: 14px;
+    }
+}
+
+/* Ajustes para pantallas grandes */
+@media screen and (min-width: 1400px) {
+    .content {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+}
